@@ -28,7 +28,7 @@ parser = argparse.ArgumentParser(description='PGD attack with PyTorch')
 
 parser.add_argument('--model', default='resnet18', help='The target model') # vgg16   resnet18
 parser.add_argument('--epoch', default=100, type=int, help='The number of training epochs.')
-parser.add_argument('--epsilon', default=0.95, type=int,  help='PGD attack parameter')
+parser.add_argument('--epsilon', default=0.5, type=int,  help='PGD attack parameter')
 parser.add_argument('--iterations', default=100,  type=int, help='PGD attack parameter')
 parser.add_argument('--samples', default=1000, type=int, help='The number of image samples to attack.')
 
